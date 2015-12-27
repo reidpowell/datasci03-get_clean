@@ -59,6 +59,7 @@ We are only interested in a subset of the features supplied, so we will use the 
 In this submission, we consider any feature containing either mean() or std() to be of interest. There are features that contain mean elsewhere in their title, e.g., "294 fBodyAcc-meanFreq()-X", and this code can be modified to analyze those; however, as there is no requirement for analysis of mean frequency of any of the FFT features or any accompanying standard deviation feature, they are omitted.
 
 ## Use Descriptive Activity Names
+These activity names are taken from the "activiy_labels.txt" file.
 
 ## Label Variables
 

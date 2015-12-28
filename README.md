@@ -14,6 +14,13 @@ The sections of this document are intended to reflect the evaluation requirement
 Following these sections are more details and explanation about the submission. They explain how the scripts work, how they are connected, and how they meet the requirements not necessarily covered by the short evaluation questions.
 
 # Tidy Data Set
+(For the purposes of this submission, we refer to https://github.com/jtleek/datasharing and http://vita.had.co.nz/papers/tidy-data.pdf)
+
+The project spec also states that "wide" data sets are acceptable, which is what has been submitted.
+
+The "key" (individual entities for which we report variables' values) is a combination of the "activityName" and "subjectId". Each row corresponds to a unique (activityName,subjectId) pair, and all 180 possible combinations are represented.
+
+The variables in the tidy data set represent the MEAN (average) of the feature estimates described in the project data's code book.
 
 # Github Repo
 

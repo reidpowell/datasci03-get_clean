@@ -13,13 +13,14 @@ Below are details relating to each column in the data set.
 ## activityName
 This column designates the activity the subject was involved in to generate the corresponding feature mean. This is a categorical field.
 
-code
-WALKING
-WALKING_UPSTAIRS
-WALKING_DOWNSTAIRS
-SITTING
-STANDING
-LAYING
+|code              |
+|------------------|
+|WALKING           |
+|WALKING_UPSTAIRS  |
+|WALKING_DOWNSTAIRS|
+|SITTING           |
+|STANDING          |
+|LAYING            |
 
 ## subjectId
 This column identifies the individual engaged in the given activity. Values are integers in the range [1,30] and is categorical. No mapping of individuals' names to subjectId was provided.

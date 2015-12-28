@@ -68,7 +68,7 @@ The test and train subfolders have the same file structure and there are three (
 2. X_test.txt: provides the feature estimates for a given (subject,activity) pair
 3. y_test.txt: provides the activity ID that a given subject's estimates correspond to
 
-Note: The "Inertial Signals" data will be omitted for the purposes of this submission. (From my understading, these subdirectories contain the gyroscopic and accellerometric data from the smartphones, from which feature estimates were calculated (in addition to other analyses). These estimates are the values with which we are concerned.)
+Note: The "Inertial Signals" data will be omitted for the purposes of this submission. (From my understading, these subdirectories contain the gyroscopic and accelerometric data from the smartphones, from which feature estimates were calculated (in addition to other analyses). These estimates are the values with which we are concerned.)
 
 ## Extract Mean and Stdev
 We are only interested in a subset of the features supplied, so we will use the "features.txt" file to determine which columns should be kept (those that contain either "mean()" or "std()").

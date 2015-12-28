@@ -74,3 +74,19 @@ dat <- dat[,!(names(dat) %in% c("activityId"))]
 dat <- dat[,c(ncol(dat),1,seq(from = 2, to = ncol(dat) - 1))]
 
 ## END: Use more descriptive Variable Names
+
+
+## BEGIN: Create tidy data set with the average of each variable for each
+## activity and each subject.
+
+library(data.table)
+dat_table <- data.table(dat)
+setkey(dat_table,activityName, subjectId)
+tidy_data <- dat_table[,lapply(.SD, mean), by = key(dat_table)]
+
+## END: Create tidy data set with the average of each variable for each
+## activity and each subject.
+
+
+## Write the file
+write.table(tidy_data, file = "./activitysubject_featureaverage.txt", row.names = FALSE)
